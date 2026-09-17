@@ -22,9 +22,7 @@ const string& Reservation::getResourceId() const { return resourceId; }
 const string& Reservation::getDate() const { return date; }
 
 void Reservation::printHeader() {
-    cout << pad("Res ID", 8) << pad("Student ID", 12) << pad("Student Name", 24)
-         << pad("Resource", 10) << "Date\n"
-              << string(66, '-') << '\n';
+    cout << pad("Res ID", 8) << pad("Student ID", 12) << pad("Student Name", 24) << pad("Resource", 10) << "Date\n" << string(66, '-') << '\n';
 }
 
 void Reservation::print() const {
