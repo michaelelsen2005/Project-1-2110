@@ -26,8 +26,7 @@ void Resource::setAvailable(bool a) { available = a; }
 void Resource::incrementTimesReserved() { ++timesReserved; }
 
 void Resource::printHeader() {
-    cout << pad("ID", 8) << pad("Name", 22) << pad("Type", 24) << "Status\n"
-              << string(66, '-') << '\n';
+    cout << pad("ID", 8) << pad("Name", 22) << pad("Type", 24) << "Status\n" << string(66, '-') << '\n';
 }
 
 void Resource::print() const {
